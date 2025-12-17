@@ -32,7 +32,7 @@ $schedule = $stmt->get_result()->fetch_assoc();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Ticket - BusLive</title>
+    <title>Your Ticket - Mero Bus</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .ticket {
@@ -55,7 +55,7 @@ $schedule = $stmt->get_result()->fetch_assoc();
 <body>
     <nav class="navbar">
         <div class="container flex justify-between items-center">
-            <a href="index.php" class="nav-brand">BusLive</a>
+            <a href="index.php" class="nav-brand">Mero Bus</a>
             <a href="user/dashboard.php" class="btn btn-secondary">My Dashboard</a>
         </div>
     </nav>

@@ -37,13 +37,13 @@ $result = $stmt->get_result();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Results - BusLive</title>
+    <title>Search Results - Mero Bus</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="container flex justify-between items-center">
-            <a href="index.php" class="nav-brand">BusLive</a>
+            <a href="index.php" class="nav-brand">Mero Bus</a>
             <div class="nav-links">
                 <a href="index.php">Home</a>
                 <?php if(isset($_SESSION['user_id'])): ?>
@@ -73,7 +73,7 @@ $result = $stmt->get_result();
                             </div>
                         </div>
                         <div class="text-center" style="min-width: 150px;">
-                            <h3 style="color: var(--secondary-color);">$<?php echo $row['price']; ?></h3>
+                            <h3 style="color: var(--secondary-color);">NPR <?php echo $row['price']; ?></h3>
                             <p class="text-muted mb-4"><?php echo $row['total_seats']; ?> Seats</p>
                             <a href="booking.php?schedule_id=<?php echo $row['id']; ?>" class="btn btn-primary">Select Seats</a>
                         </div>

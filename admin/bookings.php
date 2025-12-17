@@ -24,7 +24,7 @@ $bookings = $conn->query("SELECT b.*, u.name as user_name, u.email, s.departure_
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>All Bookings - BusLive</title>
+    <title>All Bookings - Mero Bus</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>

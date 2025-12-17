@@ -27,7 +27,7 @@ $routes = $conn->query("SELECT * FROM routes ORDER BY id DESC");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manage Routes - BusLive</title>
+    <title>Manage Routes - Mero Bus</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>

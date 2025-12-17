@@ -31,13 +31,13 @@ $bookings = $stmt->get_result();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Dashboard - BusLive</title>
+    <title>My Dashboard - Mero Bus</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="container flex justify-between items-center">
-            <a href="../index.php" class="nav-brand">BusLive</a>
+            <a href="../index.php" class="nav-brand">Mero Bus</a>
             <div class="nav-links">
                 <a href="../index.php">Home</a>
                 <a href="../logout.php" class="btn btn-secondary">Logout</a>

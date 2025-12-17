@@ -36,7 +36,7 @@ $schedules = $conn->query("SELECT s.*, b.name as bus_name, r.start_location, r.e
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manage Schedules - BusLive</title>
+    <title>Manage Schedules - Mero Bus</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -87,7 +87,7 @@ $schedules = $conn->query("SELECT s.*, b.name as bus_name, r.start_location, r.e
                         <input type="datetime-local" name="arrival_time" required>
                     </div>
                     <div class="form-group">
-                        <label>Price ($)</label>
+                        <label>Price (NPR)</label>
                         <input type="number" step="0.01" name="price" required>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Add Schedule</button>
@@ -118,7 +118,7 @@ $schedules = $conn->query("SELECT s.*, b.name as bus_name, r.start_location, r.e
                                     <td style="padding: 1rem;">
                                         <?php echo date('d M, H:i', strtotime($row['departure_time'])); ?>
                                     </td>
-                                    <td style="padding: 1rem;">$<?php echo $row['price']; ?></td>
+                                    <td style="padding: 1rem;">NPR <?php echo $row['price']; ?></td>
                                 </tr>
                             <?php endwhile; ?>
                         </tbody>

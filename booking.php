@@ -43,7 +43,7 @@ while($row = $b_result->fetch_assoc()) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Select Seats - BusLive</title>
+    <title>Select Seats - Mero Bus</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .bus-layout {
@@ -97,7 +97,7 @@ while($row = $b_result->fetch_assoc()) {
 <body>
     <nav class="navbar">
         <div class="container flex justify-between items-center">
-            <a href="index.php" class="nav-brand">BusLive</a>
+            <a href="index.php" class="nav-brand">Mero Bus</a>
         </div>
     </nav>
 
@@ -105,7 +105,7 @@ while($row = $b_result->fetch_assoc()) {
         <h2 class="text-center mb-4">Select Your Seats</h2>
         <p class="text-center text-muted mb-4">
             <?php echo $schedule['start_location'] . ' to ' . $schedule['end_location']; ?> | 
-            Price: $<?php echo $schedule['price']; ?>/seat
+            Price: NPR <?php echo $schedule['price']; ?>/seat
         </p>
 
         <div class="flex justify-between" style="max-width: 800px; margin: 0 auto;">
@@ -143,7 +143,7 @@ while($row = $b_result->fetch_assoc()) {
                 </div>
                 <div class="flex justify-between mb-4">
                     <span>Total:</span>
-                    <strong id="total-price">$0</strong>
+                    <strong id="total-price">NPR 0</strong>
                 </div>
                 
                 <form action="process_booking.php" method="POST">
@@ -191,11 +191,11 @@ while($row = $b_result->fetch_assoc()) {
             if(selectedSeats.length === 0) {
                 display.innerHTML = '<p class="text-muted">No seats selected</p>';
                 btn.disabled = true;
-                totalDisplay.innerText = '$0';
+                totalDisplay.innerText = 'NPR 0';
             } else {
                 display.innerHTML = '<p>' + selectedSeats.join(', ') + '</p>';
                 btn.disabled = false;
-                totalDisplay.innerText = '$' + (selectedSeats.length * pricePerSeat);
+                totalDisplay.innerText = 'NPR ' + (selectedSeats.length * pricePerSeat);
             }
             input.value = selectedSeats.join(',');
         }

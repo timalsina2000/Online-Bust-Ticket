@@ -31,7 +31,7 @@ $total_price = $res['price'] * $count;
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Payment - BusLive</title>
+    <title>Payment - Mero Bus</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -50,7 +50,7 @@ $total_price = $res['price'] * $count;
             </div>
             <div class="flex justify-between mb-4">
                 <span>Total Amount</span>
-                <strong style="font-size: 1.5rem; color: var(--primary-color);">$<?php echo $total_price; ?></strong>
+                <strong style="font-size: 1.5rem; color: var(--primary-color);">NPR <?php echo $total_price; ?></strong>
             </div>
 
             <form action="process_booking.php" method="POST">

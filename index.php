@@ -12,7 +12,7 @@ include 'config/db.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BusLive - Premium Bus Booking</title>
+    <title>Mero Bus - Premium Bus Booking</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -93,7 +93,7 @@ include 'config/db.php';
 
     <footer style="background: var(--card-bg); padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 2rem;">
         <div class="container text-center">
-            <p style="color: var(--text-muted);">&copy; <?php echo date('Y'); ?> BusLive System. All rights reserved.</p>
+            <p style="color: var(--text-muted);">&copy; <?php echo date('Y'); ?> Mero Bus System. All rights reserved.</p>
         </div>
     </footer>
 </body>

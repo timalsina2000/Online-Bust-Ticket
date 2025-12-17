@@ -45,13 +45,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login - BusLive</title>
+    <title>Login - Mero Bus</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="container flex justify-between items-center">
-            <a href="index.php" class="nav-brand">BusLive</a>
+            <a href="index.php" class="nav-brand">Mero Bus</a>
             <div class="nav-links">
                 <a href="index.php">Home</a>
                 <a href="signup.php">Sign Up</a>

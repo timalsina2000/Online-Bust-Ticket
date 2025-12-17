@@ -22,7 +22,7 @@ $bookings = $conn->query("SELECT COUNT(*) as c FROM bookings")->fetch_assoc()['c
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard - Teraibus</title>
+    <title>Admin Dashboard - Mero Bus</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
